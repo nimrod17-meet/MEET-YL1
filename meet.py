@@ -84,7 +84,7 @@ def move_cell(cell):
 	r = cell.get_radius()
 	cell.goto(x+dx,y+dy+r)
 
-# this function takes a list of rectangles and draws them on the screen
+# this function takes a list of cells and draws them on the screen
 def move_cells(cells):
 	hideturtle()
 	for cell in cells:
@@ -105,7 +105,7 @@ def get_screen_height():
 
 # This function returns the x location of the mouse on the screen
 def get_x_mouse():
-	global mouse
+	global mousek
 	return mouse.xcor()
 
 # This function returns the y location of the mouse on the screen
