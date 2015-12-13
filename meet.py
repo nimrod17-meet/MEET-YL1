@@ -105,7 +105,7 @@ def get_screen_height():
 
 # This function returns the x location of the mouse on the screen
 def get_x_mouse():
-	global mousek
+	global mouse
 	return mouse.xcor()
 
 # This function returns the y location of the mouse on the screen

@@ -96,7 +96,7 @@ def move_cells(cells):
 # This function returns the width of the screen
 def get_screen_width():
 	global CANVAS_WIDTH
-	return int(CANVAS_WIDTH/2-10)d
+	return int(CANVAS_WIDTH/2-10)
 
 # This function returns the height of the screen
 def get_screen_height():
@@ -105,7 +105,7 @@ def get_screen_height():
 
 # This function returns the x location of the mouse on the screen
 def get_x_mouse():
-	global mousek
+	global mouse
 	return mouse.xcor()
 
 # This function returns the y location of the mouse on the screen
@@ -127,7 +127,7 @@ def movearound(event):
 
 # This function calculates the new x speed(dx) and y speed(dy) depending on cell size and mouse location
 # We use this function to make the user cell follows the mouse
-def get_user_direction(cell):
+def get_user_direction():
 	mouse_x = get_x_mouse()
 	mouse_y = get_y_mouse()
 
